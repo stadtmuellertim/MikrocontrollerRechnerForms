@@ -145,6 +145,9 @@ std::string SerialPort::read()
             return "Error. Keine Daten empfangen.";
     }
 
+    // Discard any pending communication if the reading timed out.
+    PurgeComm(ioHandler, PURGE_RXCLEAR | PURGE_TXCLEAR);
+
     return "Error. Timeout.";
 }
 
