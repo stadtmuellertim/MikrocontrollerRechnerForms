@@ -5,6 +5,9 @@
 
 #include <Windows.h>
 #include <string>
+#include <iostream>
+#include <time.h>
+#include <fstream>
 
 
 class SerialPort

@@ -1,11 +1,6 @@
 #include "pch.h"
 #include "SerialPort.h"
 
-#include <iostream>
-#include <time.h>
-#include <fstream>
-#include <string>
-
 SerialPort::SerialPort()
 {
     
